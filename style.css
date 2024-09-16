@@ -18,26 +18,18 @@
 body{
     background-color: var(--bodybg-color);
     width: 100%;
-    overflow: hidden;
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* min-width: 375px;
-    max-width: 1440px; */
 }
 .container{
     width: 100%;
-    min-width: 320px;
-    min-height: 530px;
+    min-width: 350px;
     display: flex;
     align-items: center;
-    overflow: hidden;
     justify-content: center;
-    margin-top: 90px;
+    margin-top: 7em;
 }
 .card-container{
     display: flex;
-    /* margin: auto; */
-    width: 40%;
+    width: 45%;
     background-color: var(--card-bg-color);
     border-radius: 5px;
 }
@@ -56,23 +48,23 @@ body{
 .card-container1{
     width: 100%;
 }
+.card-container h1{
+    width: 80%;
+    padding: 0 30px;
+    text-align: left;
+    font-size: 1.9em;
+    font-family: var(--description-font);
+    font-weight: 600;
+}
 .card-content1 p{
     width: 70%;
     display: flex;
-    font-size: 0.9em;
+    font-size: 1em;
     margin: 0px;
     padding: 20px 30px;
     font-family: var(--title-font);
     font-weight: var(--mont-font-weight);
     color: var(--font-color);
-}
-.card-container h1{
-    width: 45%;
-    margin: 0px;
-    padding-left: 30px;
-    font-size: 1.2em;
-    font-family: var(--description-font);
-    font-weight: 600;
 }
 .price-tag{
     display: flex;
@@ -87,17 +79,17 @@ body{
 .price-tag p{
     width: 20%;
     padding: 5px;
-    padding-left: 10px;
     text-decoration: line-through;
 }
 button{
-    width: 20%;
+    width: 100%;
     padding: 15px 15px;
     border: none;
     border-radius: 5px;
 }
 .cart-btn{
-    padding: 10px 30px;
+    display: flex;
+    padding: 30px;
 }
 #card-img{
     width: 15px;
@@ -112,26 +104,24 @@ button{
     font-family: var(--description-font);
     color: var(--card-bg-color);
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:450px){
     *{
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
     body{
-        width: 98%;
+        margin: 0;
+        padding: 0;
     }
     .container{
-        width: 98%;
-        display: flex;
-        margin-top: 10px;
-        padding: 0;
-        flex-direction: column;
-        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
     }
     .card-container{
-        width: 80%;
+        width: 70%;
+        margin-top: 3em;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .product-bg{
         display: none;
@@ -147,26 +137,41 @@ button{
     }
     .card-container .title-word{
         padding: 0;
-        margin: 5px;
-        font-size: 10px;
+        margin: 0;
+        font-size: 1em;
+        padding: 10px;
         font-family: var(--description-font);
     }
     .card-content1{
-        padding: 10px;
+        width: 100%;
+        padding: 5px;
     }
     .card-content1 h1{
-        width: 90%;
-        margin: 5px;
-        padding: 0;
+        width: 70%;
+        font-size: 25px;
+        margin: 0;
+        padding: 10px;
     }
     .card-content1 p{
-        width: 100%;
-        padding: 0;
-        margin: 5px;
-        font-size: 11px;
+        width: 90%;
+        padding: 10px;
+        margin: 0;
+        font-size: 15px;
+    }
+    .price-tag{
+        width: 30%;
+    }
+    .price-tag h1{
+        padding: 10px;
+    }
+    .price-tag p{
+        padding: 1em;
     }
     .cart-btn{
-        padding: 0;
-        margin: 10px;
+        padding: 10px 20px;
+        margin: 0;
+    }
+    .icon-cart{
+        padding: 20px 30px;
     }
 }
